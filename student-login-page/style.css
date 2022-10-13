@@ -1,0 +1,11 @@
+.main-container{
+    border: 1px solid black;
+}
+
+.left-container{
+    border: 1px solid blue;
+}
+
+.right-container{
+    border: 1px solid red;
+}
