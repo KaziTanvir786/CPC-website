@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Student Login</title>
 </head>
-<body>   
+
+<body>
     <div class="main-container">
         <div class="row">
-            <div class="left-container col d-flex justify-content-center" onclick="this.classList.add('paused')">
+            <div class="left-container col d-flex justify-content-center">
                 <div class="form-container">
                     <div class="form-title">
                         <h1 class="text-center">Student Login</h1>
-                        <hr>
                     </div>
                     <form class="row g-3 d-flex justify-content-center">
-                        <div class="col-auto input d-flex">
+                        <div class="col-auto input d-flex align-items-center">
                             <i class="fas fa-user form-icon"></i>
                             <input type="email" class="form-control input-field" id="staticEmail" placeholder="Email">
                         </div>
-                        <div class="col-auto input d-flex">
+                        <div class="col-auto input d-flex align-items-center">
                             <i class="fas fa-lock form-icon"></i>
-                            <input type="password" class="form-control input-field" id="inputPassword2" placeholder="Password">
+                            <input type="password" class="form-control input-field" id="inputPassword2"
+                                placeholder="Password">
                         </div>
                         <div class="captcha d-flex justify-content-center">
                             <div class="g-recaptcha" data-sitekey="6LeMzYciAAAAADMHS2BVd9tr7gB7fzsSROpba0zo"></div>
                         </div>
                         <div class="button d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary mb-3 login-btn">Login</button>
+                            <button type="submit" class="btn btn-success mb-3 login-btn">Login</button>
                         </div>
                     </form>
                     <div>
@@ -38,18 +40,23 @@
                             <button type="submit" class="btn btn-primary mb-3 resetpass-btn">Reset Password</button>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center reg-title">
-                        <h4>Have not Registered yet?</h4>
-                    </div>
-                    <div class="reg-btn d-flex justify-content-center align-items-between">
-                        <button type="submit" class="btn btn-primary mb-3 student-reg-btn">Register as Student</button>
-                        <button type="submit" class="btn btn-primary mb-3 alumni-reg-btn">Register as Alumni</button>
+                    <div class="reg-container" onmouseenter="this.classList.add('paused')">
+                        <div class="d-flex justify-content-center reg-title">
+                            <h4>Have not registered yet?</h4>
+                        </div>
+                        <div class="reg-btn d-flex justify-content-center align-items-between">
+                            <button type="submit" class="btn btn-success mb-3 student-reg-btn">Register as
+                                Student</button>
+                            <button type="submit" class="btn btn-success mb-3 alumni-reg-btn">Register as
+                                Alumni</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        
+
             <div class="right-container col d-flex justify-content-center">
-                <img class="login-side-img" src="./img/nsu-logo-small.png" width="20%" height="22%" alt="" srcset="">
+                <!-- <img class="login-side-img" src="./img/nsu-logo-small.png" width="122px" height="155px" alt=""
+                    srcset=""> -->
             </div>
         </div>
     </div>
@@ -58,6 +65,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
+
 </html>
 
 

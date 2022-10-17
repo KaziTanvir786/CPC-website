@@ -1,19 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,100&display=swap');
 
 @keyframes move {
-    from{
-        transform: translate(0);
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
     }
-    to{
-        transform: translateX(-10px);
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
     }
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-.main-container{
+hr {
+    color: white;
+}
+
+.main-container {
     padding: 10px;
     height: 780px;
     background-image: url("./img/nsu-2.jpg");
@@ -22,26 +36,27 @@ body{
     overflow: hidden;
 }
 
-.left-container{
+.left-container {
     height: 1000px;
     width: 1000px;
     margin-top: -100px;
     border-radius: 0px 50% 50% 0px;
-    background-color: rgba(24, 96, 185, 0.85);
+    background-image: linear-gradient(to right, rgba(0, 0, 44, 0.85), rgba(0, 97, 161, 0.85));
     box-shadow: 1px 5px 20px black;
-    animation: move 2s ease 0s infinite alternate;
-    animation-play-state: running;;
+    /* animation: move 2s ease 0s infinite alternate;
+    animation-play-state: running;
+    ; */
 }
 
-.right-container{
+.right-container {
     height: 750px;
     border-radius: 15px;
 }
 
-.form-container{
+.form-container {
     border-radius: 20px;
     height: 50%;
-    margin-top: 150px;
+    margin-top: 120px;
     width: 500px;
     margin-left: -100px;
 }
@@ -50,111 +65,120 @@ body{
     box-shadow: none;
 }
 
-.input-field{
+.input-field {
+    text-indent: 25px;
     border-radius: 20px;
     height: 40px;
     width: 350px;
     transition: 0.3s;
 }
 
-.input-field:focus{
+/* .input-field:focus {
     transform: scale(1.05);
     margin: 0px 10px;
+} */
+
+.form-icon {
+    margin-left: 15px;
+    color: grey;
+    position: absolute;
 }
 
-.form-icon{
-    margin: 12px 10px 0px 0px ;
-    color: white;
+.reg-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    /* box-shadow: 1px 2px 10px black; */
+    animation: move 1.5s ease infinite;
+    animation-iteration-count: 2;
 }
 
-.login-btn{
+.login-btn {
     width: 200px;
     height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: darkcyan;
+    /* background-color: #1d89bb; */
     transition: 0.3s;
 }
 
-.login-btn:hover{
+.login-btn:hover {
     transform: scale(1.05);
     background-color: rgb(230, 230, 230);
     color: black;
 }
 
-.login-side-img{
+.login-side-img {
     margin-top: 120px;
 }
 
-.form-title{
+.form-title {
     padding: 20px;
     color: white;
 }
 
-.form-title h1{
+.form-title h1 {
     margin-bottom: 10px;
 }
 
-.animated-line{
-    border-bottom: 1px solid rgb(177, 177, 177);
-    margin-bottom: 30px;
-    width: 200px;
-    animation: move 2s ease 0s infinite alternate;
-    animation-play-state: running;
-}
-
-.resetpass-btn{
+.resetpass-btn {
     width: 200px;
     height: 40px;
     border-radius: 20px;
     transition: 0.3s;
     border: none;
+    background-color: #121135;
 }
 
-.resetpass-btn:hover{
+.resetpass-btn:hover {
     transform: scale(1.05);
     background-color: rgb(230, 230, 230);
     color: black;
 }
 
-.student-reg-btn{
+.student-reg-btn {
     height: 50px;
     width: 200px;
     margin: 10px;
-    background-image: linear-gradient(to right, rgb(129, 5, 5) , rgb(184, 63, 8));
     border: none;
     transition: 0.3s;
+    background-color: rgba(0, 97, 161, 0.85);
 }
 
-.student-reg-btn:hover{
-    transform: scale(1.1);
+.student-reg-btn:hover {
+    transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
+    background-color: white;
+    color: black;
 }
 
-.alumni-reg-btn{
+.alumni-reg-btn {
     height: 50px;
     width: 200px;
     margin: 10px;
-    background-image: linear-gradient(to right, rgb(0, 0, 44), rgb(0, 130, 216) );
     border: none;
     transition: 0.3s;
+    background-color: rgba(0, 97, 161, 0.85);
 }
 
-.alumni-reg-btn:hover{
-    transform: scale(1.1);
+.alumni-reg-btn:hover {
+    transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
+    background-color: white;
+    color: black;
 }
 
-.reg-title{
+.reg-title {
     padding: 30px 0px 10px 0px;
     color: white;
 }
 
-.paused{
-    -webkit-animation-play-state:paused;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused; 
-    animation-play-state:paused;
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 /* 
