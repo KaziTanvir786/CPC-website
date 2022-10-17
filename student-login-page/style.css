@@ -5,7 +5,7 @@
         transform: translate(0);
     }
     to{
-        transform:translateY(-10px);
+        transform: translateX(-10px);
     }
 }
 
@@ -14,14 +14,12 @@ body{
 }
 
 .main-container{
-    /* border: 5px solid black; */
     padding: 10px;
     height: 780px;
     background-image: url("./img/nsu-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 50px; */
-    /* border-radius: 15px; */
+    overflow: hidden;
 }
 
 .left-container{
@@ -30,23 +28,18 @@ body{
     margin-top: -100px;
     border-radius: 0px 50% 50% 0px;
     background-color: rgba(24, 96, 185, 0.85);
-    box-shadow: 2px 5px 20px black;
-    animation: move 1s ease 0s infinite alternate;
+    box-shadow: 1px 5px 20px black;
+    animation: move 2s ease 0s infinite alternate;
     animation-play-state: running;;
 }
 
 .right-container{
-    /* border: 1px solid red; */
     height: 750px;
     border-radius: 15px;
 }
 
 .form-container{
-    /* position: fixed; */
-    /* background-color: white; */
-    /* padding-top: 80px; */
     border-radius: 20px;
-    /* box-shadow: 2px 5px 20px black; */
     height: 50%;
     margin-top: 150px;
     width: 500px;
@@ -106,7 +99,7 @@ body{
     border-bottom: 1px solid rgb(177, 177, 177);
     margin-bottom: 30px;
     width: 200px;
-    animation: move 1.5s ease 0s infinite alternate;
+    animation: move 2s ease 0s infinite alternate;
     animation-play-state: running;
 }
 
