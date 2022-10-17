@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;1,100&display=swap');
 
+@keyframes move {
+    from{
+        width: 200px;
+    }
+    to{
+        width: 300px;
+    }
+}
+
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -8,6 +17,9 @@ body{
     /* border: 5px solid black; */
     padding: 10px;
     height: 780px;
+    background-image: url("./img/nsu-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     /* margin-top: 50px; */
     /* border-radius: 15px; */
 }
@@ -17,7 +29,8 @@ body{
     width: 1000px;
     margin-top: -100px;
     border-radius: 0px 50% 50% 0px;
-    background-color: #1860b9;
+    background-color: rgba(24, 96, 185, 0.85);
+    box-shadow: 2px 5px 20px black;
 
 }
 
@@ -28,12 +41,13 @@ body{
 }
 
 .form-container{
-    background-color: white;
-    padding-top: 80px;
+    position: relative;
+    /* background-color: white; */
+    /* padding-top: 80px; */
     border-radius: 20px;
-    box-shadow: 2px 5px 20px black;
+    /* box-shadow: 2px 5px 20px black; */
     height: 50%;
-    margin-top: 200px;
+    margin-top: 150px;
     width: 500px;
     margin-left: -100px;
 }
@@ -56,11 +70,11 @@ body{
 
 .form-icon{
     margin: 12px 10px 0px 0px ;
-    color: grey;
+    color: white;
 }
 
 .login-btn{
-    width: 100px;
+    width: 200px;
     height: 40px;
     border-radius: 20px;
     border: none;
@@ -69,7 +83,9 @@ body{
 }
 
 .login-btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background-color: rgb(230, 230, 230);
+    color: black;
 }
 
 .login-side-img{
@@ -77,13 +93,68 @@ body{
 }
 
 .form-title{
-    padding: 10px;
+    padding: 20px;
+    color: white;
 }
 
 .form-title h1{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
+.animated-line{
+    border-bottom: 1px solid rgb(177, 177, 177);
+    margin-bottom: 30px;
+    width: 200px;
+    animation: move 1.5s ease 0s infinite alternate;
+    animation-play-state: running;
+}
+
+.resetpass-btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
+}
+
+.resetpass-btn:hover{
+    transform: scale(1.05);
+    background-color: rgb(230, 230, 230);
+    color: black;
+}
+
+.student-reg-btn{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(129, 5, 5) , rgb(184, 63, 8));
+    border: none;
+    transition: 0.3s;
+}
+
+.student-reg-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px black;
+}
+
+.alumni-reg-btn{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(0, 0, 44), rgb(0, 130, 216) );
+    border: none;
+    transition: 0.3s;
+}
+
+.alumni-reg-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px black;
+}
+
+.reg-title{
+    padding: 30px 0px 10px 0px;
+    color: white;
+}
 
 /* 
 @media only screen and (max-width: 688px){
