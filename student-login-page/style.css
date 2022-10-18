@@ -101,12 +101,14 @@ hr {
     border: none;
     /* background-color: #1d89bb; */
     transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .login-btn:hover {
-    transform: scale(1.03);
-    background-color: #0b693e;
-    /* color: black; */
+    transform: scale(1.05);
+    background-color: rgb(230, 230, 230);
+    color: black;
 }
 
 .login-side-img {
@@ -128,13 +130,15 @@ hr {
     border-radius: 20px;
     transition: 0.3s;
     border: none;
-    background-color: #0356b6;
+    background-color: #121135;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .resetpass-btn:hover {
-    transform: scale(1.03);
-    background-color: #044da0;
-    /* color: black; */
+    transform: scale(1.05);
+    background-color: rgb(230, 230, 230);
+    color: black;
 }
 
 .student-reg-btn {
@@ -142,16 +146,18 @@ hr {
     width: 200px;
     margin: 10px;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: 0.3s;
     background-color: rgba(0, 97, 161, 0.85);
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .student-reg-btn:hover {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
-    background-color: rgba(5, 89, 145, 0.85);
-    /* color: black; */
+    background-color: white;
+    color: black;
 }
 
 .alumni-reg-btn {
@@ -159,16 +165,18 @@ hr {
     width: 200px;
     margin: 10px;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: 0.3s;
     background-color: rgba(0, 97, 161, 0.85);
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 .alumni-reg-btn:hover {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
-    background-color: rgba(5, 89, 145, 0.85);
-    /* color: black; */
+    background-color: white;
+    color: black;
 }
 
 .reg-title {
