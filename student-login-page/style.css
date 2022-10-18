@@ -183,14 +183,16 @@ hr {
     animation-play-state: paused;
 }
 
-/* 
+
 @media only screen and (max-width: 688px){
-    .login-form{
-        margin-left: 5%;
-        margin-right: 5%;
+    .form-container{
+        margin-left: 2px
+    }
+    .left-container{
+        border-radius: 0px 0% 0% 0px;
     }
 }
-@media only screen and (min-width:689px) and (max-width: 991px){
+/* @media only screen and (min-width:689px) and (max-width: 991px){
     .login-form{
         margin-left: 15%;
         margin-right: 15%;
