@@ -27,6 +27,14 @@ hr {
     color: white;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 22px;
+}
+
 .main-container {
     padding: 10px;
     height: 780px;
