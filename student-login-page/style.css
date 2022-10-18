@@ -104,9 +104,9 @@ hr {
 }
 
 .login-btn:hover {
-    transform: scale(1.05);
-    background-color: rgb(230, 230, 230);
-    color: black;
+    /* transform: scale(1.02); */
+    background-color: #0b693e;
+    /* color: black; */
 }
 
 .login-side-img {
@@ -128,13 +128,13 @@ hr {
     border-radius: 20px;
     transition: 0.3s;
     border: none;
-    background-color: #121135;
+    background-color: #0356b6;
 }
 
 .resetpass-btn:hover {
-    transform: scale(1.05);
-    background-color: rgb(230, 230, 230);
-    color: black;
+    /* transform: scale(1.05); */
+    background-color: #044da0;
+    /* color: black; */
 }
 
 .student-reg-btn {
@@ -150,8 +150,8 @@ hr {
 .student-reg-btn:hover {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
-    background-color: white;
-    color: black;
+    background-color: rgba(5, 89, 145, 0.85);
+    /* color: black; */
 }
 
 .alumni-reg-btn {
@@ -167,8 +167,8 @@ hr {
 .alumni-reg-btn:hover {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
-    background-color: white;
-    color: black;
+    background-color: rgba(5, 89, 145, 0.85);
+    /* color: black; */
 }
 
 .reg-title {
