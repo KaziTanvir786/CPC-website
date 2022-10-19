@@ -19,6 +19,25 @@
     }
 }
 
+@keyframes jumpX {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-10px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 
@@ -79,13 +98,27 @@ h4{
     border-radius: 20px;
     height: 40px;
     width: 350px;
+    border: none;
     transition: 0.3s;
 }
 
-/* .input-field:focus {
+.input-field:focus{
     transform: scale(1.05);
-    margin: 0px 10px;
+    margin: 0px 7px;
+}
+
+#email-field{
+    border: none;
+}
+
+/* .red-border{
+    border: 2px solid #32a345;
 } */
+
+.jump{
+    animation: move 0.5s ease infinite;
+    animation-iteration-count: 1;
+}
 
 .form-icon {
     margin-left: 15px;

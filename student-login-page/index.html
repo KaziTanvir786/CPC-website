@@ -19,20 +19,20 @@
                         <h1 class="text-center">Student Login</h1>
                     </div>
                     <form class="row g-3 d-flex justify-content-center">
-                        <div class="col-auto input d-flex align-items-center">
-                            <i class="fas fa-user form-icon"></i>
-                            <input type="email" class="form-control input-field" id="staticEmail" placeholder="Email">
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="email" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Email">
+                            <i id="email-icon" class="fas fa-user form-icon"></i>
                         </div>
                         <div class="col-auto input d-flex align-items-center">
-                            <i class="fas fa-lock form-icon"></i>
-                            <input type="password" class="form-control input-field" id="inputPassword2"
+                            <input type="password" class="form-control input-field" oninput="validatePass()" id="input-pass"
                                 placeholder="Password">
+                            <i id="pass-icon" class="fas fa-lock form-icon"></i>
                         </div>
                         <div class="captcha d-flex justify-content-center">
                             <div class="g-recaptcha" data-sitekey="6LeMzYciAAAAADMHS2BVd9tr7gB7fzsSROpba0zo"></div>
                         </div>
                         <div class="button d-flex justify-content-center">
-                            <button type="submit" class="btn btn-success mb-3 login-btn">Login</button>
+                            <button type="submit" id="id-login-btn" class="btn btn-success mb-3 login-btn">Login</button>
                         </div>
                     </form>
                     <div>
@@ -60,10 +60,11 @@
             </div>
         </div>
     </div>
+    
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-
 </body>
 
 </html>
