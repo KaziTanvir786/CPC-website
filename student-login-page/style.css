@@ -126,6 +126,12 @@ h4{
     position: absolute;
 }
 
+.form-icon-right{
+    margin-left: 320px;
+    position: absolute;
+    color: rgb(2, 184, 2);
+}
+
 .reg-container {
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 20px;
@@ -234,7 +240,6 @@ h4{
     -o-animation-play-state: paused;
     animation-play-state: paused;
 }
-
 
 @media only screen and (max-width: 545px){
     .form-container{
