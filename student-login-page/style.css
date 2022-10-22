@@ -47,11 +47,11 @@ hr {
     color: white;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-h4{
+h4 {
     font-size: 22px;
 }
 
@@ -102,12 +102,12 @@ h4{
     transition: 0.3s;
 }
 
-.input-field:focus{
+.input-field:focus {
     transform: scale(1.05);
     margin: 0px 7px;
 }
 
-#email-field{
+#email-field {
     border: none;
 }
 
@@ -115,7 +115,7 @@ h4{
     border: 2px solid #32a345;
 } */
 
-.jump{
+.jump {
     animation: move 0.5s ease infinite;
     animation-iteration-count: 1;
 }
@@ -126,8 +126,18 @@ h4{
     position: absolute;
 }
 
-.form-icon-right{
-    margin-left: 320px;
+#warn-icon-email,
+#warn-icon-pass {
+    display: none;
+    margin-left: 325px;
+    position: absolute;
+    color: rgb(255, 0, 0);
+}
+
+#check-icon-email,
+#check-icon-pass {
+    display: none;
+    margin-left: 322px;
     position: absolute;
     color: rgb(2, 184, 2);
 }
@@ -241,102 +251,123 @@ h4{
     animation-play-state: paused;
 }
 
-@media only screen and (max-width: 545px){
-    .form-container{
+@media only screen and (max-width: 545px) {
+    .form-container {
         margin-left: 2px
     }
-    .left-container{
+
+    .left-container {
         border-radius: 0px 0% 0% 0px;
     }
-    .reg-btn{
+
+    .reg-btn {
         display: flex;
         flex-direction: column;
     }
-    .alumni-reg-btn{
+
+    .alumni-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
-    .student-reg-btn{
+
+    .student-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
 }
-@media only screen and (min-width:545px) and (max-width: 991px){
-    .form-container{
+
+@media only screen and (min-width:545px) and (max-width: 991px) {
+    .form-container {
         margin-left: -30px
     }
-    .left-container{
+
+    .left-container {
         border-radius: 0px 50% 50% 0px;
     }
-    .reg-container{
+
+    .reg-container {
         margin-left: 50px;
         width: 80%;
     }
-    .reg-btn{
+
+    .reg-btn {
         display: flex;
         flex-direction: column;
     }
-    .alumni-reg-btn{
+
+    .alumni-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
-    .student-reg-btn{
+
+    .student-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
 }
 
-@media only screen and (min-width:991px) and (max-width: 1099px){
-    .form-container{
+@media only screen and (min-width:991px) and (max-width: 1099px) {
+    .form-container {
         width: 80%;
         margin-left: 2px
     }
-    .left-container{
+
+    .left-container {
         border-radius: 0px 50% 50% 0px;
     }
-    .right-container{
+
+    .right-container {
         width: 0%;
         padding: 0%;
         margin: 0%;
     }
-    .reg-btn{
+
+    .reg-btn {
         display: flex;
         flex-direction: column;
     }
-    .alumni-reg-btn{
+
+    .alumni-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
-    .student-reg-btn{
+
+    .student-reg-btn {
         margin-left: 15%;
         width: 70%;
     }
 }
 
-@media only screen and (min-width:1100px) and (max-width: 1300px){
-    .form-container{
+@media only screen and (min-width:1100px) and (max-width: 1300px) {
+    .form-container {
         width: 80%;
         margin-left: 2px
     }
-    .left-container{
+
+    .left-container {
         border-radius: 0px 50% 50% 0px;
     }
-    .form-container{
+
+    .form-container {
         margin-left: -80px;
     }
-    .reg-container{
+
+    .reg-container {
         /* margin-left: 5px; */
         width: 110%;
     }
-    .right-container{
+
+    .right-container {
         width: 0%;
         padding: 0%;
         margin: 0%;
     }
-    .alumni-reg-btn{
+
+    .alumni-reg-btn {
         margin-right: 30px;
     }
-    .student-reg-btn{
+
+    .student-reg-btn {
         margin-left: 30px;
     }
 }
