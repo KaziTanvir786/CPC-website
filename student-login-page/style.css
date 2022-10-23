@@ -40,7 +40,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    
 }
 
 hr {
@@ -189,14 +189,14 @@ h4 {
     border-radius: 20px;
     transition: 0.3s;
     border: none;
-    background-color: #044896;
+    background-color: rgb(2, 133, 209);
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .resetpass-btn:hover {
     transform: scale(1.03);
-    background-color: #033b7c;
+    background-color: rgb(3, 103, 161);
     box-shadow: 2px 5px 10px black;
     /* color: black; */
 }
