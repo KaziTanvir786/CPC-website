@@ -176,14 +176,14 @@ body {
     border-radius: 20px;
     transition: 0.3s;
     border: none;
-    background-color: rgb(2, 133, 209);
+    background-color: rgb(207, 93, 0);
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .resetpass-btn:hover {
     transform: scale(1.03);
-    background-color: rgb(3, 103, 161);
+    background-color: rgba(189, 69, 0, 0.829);
     box-shadow: 2px 5px 10px black;
     /* color: black; */
 }
