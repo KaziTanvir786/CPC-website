@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.main-container {
+    padding: 10px;
+    height: 780px;
+    background-image: url("./img/nsu-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.form-container {
+    margin-top: 100px;
+    padding-top: 40px;
+    border-radius: 20px;
+    height: 60%;
+    width: 520px;
+    background-image: linear-gradient(to left, rgba(0, 97, 161, 0.85), rgba(0, 0, 44, 0.85));
+    box-shadow: 1px 5px 20px black;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-field {
+    text-indent: 25px;
+    border-radius: 20px;
+    height: 40px;
+    width: 350px;
+    border: none;
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    transform: scale(1.05);
+    margin: 0px 7px;
+}
+
+#email-field {
+    border: none;
+}
+
+.jump {
+    animation: move 0.5s ease infinite;
+    animation-iteration-count: 1;
+}
+
+.form-icon {
+    margin-left: 15px;
+    color: grey;
+    position: absolute;
+}
+
+#warn-icon-email,
+#warn-icon-pass {
+    display: none;
+    margin-left: 325px;
+    position: absolute;
+    color: rgb(255, 0, 0);
+}
+
+#check-icon-email,
+#check-icon-pass {
+    display: none;
+    margin-left: 322px;
+    position: absolute;
+    color: rgb(2, 184, 2);
+}
+
+.login-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+    background-color: #0b693e;
+    box-shadow: 2px 5px 10px black;
+}
+
+.form-title {
+    padding: 20px;
+    color: white;
+}
+
+.form-title h1 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 445px) {
+    .main-container {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .form-container {
+        margin: 0%;
+        padding-top: 30%;
+        height: 100%;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .form {
+        width: 90%;
+        padding-left: 15%;
+    }
+
+}
