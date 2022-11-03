@@ -45,7 +45,7 @@ body {
 
 .main-container {
     padding: 10px;
-    height: 780px;
+    height: 100vh;
     background-image: url("./img/nsu-pic-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ body {
 }
 
 .left-container {
-    height: 1000px;
+    height: 125vh;
     width: 1000px;
     margin-top: -100px;
     border-radius: 0px 50% 50% 0px;

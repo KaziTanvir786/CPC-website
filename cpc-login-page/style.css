@@ -6,8 +6,8 @@ body {
 }
 
 .main-container {
+    height: 100vh;
     padding: 10px;
-    height: 780px;
     background-image: url("./img/nsu-pic-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
