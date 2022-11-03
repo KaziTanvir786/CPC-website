@@ -50,7 +50,7 @@ hr {
 .main-container {
     padding: 10px;
     height: 780px;
-    background-image: url("./img/nsu.jpg");
+    background-image: url("./img/nsu-pic-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -63,9 +63,6 @@ hr {
     border-radius: 50% 0% 0% 50%;
     background-image: linear-gradient(to left, rgba(0, 97, 161, 0.85), rgba(0, 0, 44, 0.85));
     box-shadow: 2px 5px 20px black;
-    /* animation: move 2s ease 0s infinite alternate;
-    animation-play-state: running;
-    ; */
 }
 
 .left-container {
@@ -102,10 +99,6 @@ hr {
     border: none;
 }
 
-/* .red-border{
-    border: 2px solid #32a345;
-} */
-
 .jump {
     animation: move 0.5s ease infinite;
     animation-iteration-count: 1;
@@ -140,7 +133,6 @@ hr {
     margin-top: 20px;
     padding-bottom: 15px;
     border-radius: 20px;
-    /* box-shadow: 1px 2px 10px black; */
     animation: move 1.5s ease infinite;
     animation-iteration-count: 2;
 }
@@ -150,7 +142,6 @@ hr {
     height: 40px;
     border-radius: 20px;
     border: none;
-    /* background-color: #1d89bb; */
     transition: 0.3s;
     text-transform: uppercase;
     font-size: 14px;
@@ -160,7 +151,6 @@ hr {
     transform: scale(1.03);
     background-color: #0b693e;
     box-shadow: 2px 5px 10px black;
-    /* color: black; */
 }
 
 .login-side-img {
@@ -191,7 +181,6 @@ hr {
     transform: scale(1.03);
     background-color: rgba(189, 69, 0, 0.829);
     box-shadow: 2px 5px 10px black;
-    /* color: black; */
 }
 
 .corporate-reg-btn {
@@ -210,7 +199,6 @@ hr {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
     background-color: rgba(4, 80, 131, 0.85);
-    /* color: black; */
 }
 
 .reg-title {
@@ -240,7 +228,6 @@ hr {
 @media only screen and (min-width:546px) and (max-width: 572px) {
     .form-container {
         margin-left: 30px;
-        /* width: 95%; */
     }
 
     .left-container{
@@ -257,7 +244,6 @@ hr {
 @media only screen and (min-width:572px) and (max-width: 991px) {
     .form-container {
         margin-left: 30px;
-        /* width: 95%; */
     }
 
     .reg-container {

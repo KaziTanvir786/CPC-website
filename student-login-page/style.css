@@ -46,7 +46,7 @@ body {
 .main-container {
     padding: 10px;
     height: 780px;
-    background-image: url("./img/nsu-2.jpg");
+    background-image: url("./img/nsu-pic-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -59,9 +59,6 @@ body {
     border-radius: 0px 50% 50% 0px;
     background-image: linear-gradient(to right, rgba(0, 0, 44, 0.85), rgba(0, 97, 161, 0.85));
     box-shadow: 1px 5px 20px black;
-    /* animation: move 2s ease 0s infinite alternate;
-    animation-play-state: running;
-    ; */
 }
 
 .right-container {
@@ -98,10 +95,6 @@ body {
     border: none;
 }
 
-/* .red-border{
-    border: 2px solid #32a345;
-} */
-
 .jump {
     animation: move 0.5s ease infinite;
     animation-iteration-count: 1;
@@ -134,7 +127,6 @@ body {
     margin-top: 20px;
     padding-bottom: 15px;
     border-radius: 20px;
-    /* box-shadow: 1px 2px 10px black; */
     animation: move 1.5s ease infinite;
     animation-iteration-count: 2;
 }
@@ -144,7 +136,6 @@ body {
     height: 40px;
     border-radius: 20px;
     border: none;
-    /* background-color: #1d89bb; */
     transition: 0.3s;
     text-transform: uppercase;
     font-size: 14px;
@@ -154,7 +145,6 @@ body {
     transform: scale(1.03);
     background-color: #0b693e;
     box-shadow: 2px 5px 10px black;
-    /* color: black; */
 }
 
 .login-side-img {
@@ -185,7 +175,6 @@ body {
     transform: scale(1.03);
     background-color: rgba(189, 69, 0, 0.829);
     box-shadow: 2px 5px 10px black;
-    /* color: black; */
 }
 
 .student-reg-btn {
@@ -204,7 +193,6 @@ body {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
     background-color: rgba(4, 80, 131, 0.85);
-    /* color: black; */
 }
 
 .alumni-reg-btn {
@@ -223,7 +211,6 @@ body {
     transform: scale(1.03);
     box-shadow: 2px 5px 10px black;
     background-color: rgba(4, 80, 131, 0.85);
-    /* color: black; */
 }
 
 .reg-title {
@@ -340,7 +327,6 @@ body {
     }
 
     .reg-container {
-        /* margin-left: 5px; */
         width: 110%;
     }
 
