@@ -19,7 +19,13 @@ var config = {
         datasets: [{
             label: labelTitle,
             data: inputData,
-            backgroundColor: background
+            // backgroundColor: background,
+            borderColor: 'rgb(75, 192, 192)',
+            pointBorderColor: background,
+            pointBackgroundColor: background,
+            pointRadius: 6,
+            pointHoverRadius: 10,
+            tension: 0.3
         }]
     },
     options: {
