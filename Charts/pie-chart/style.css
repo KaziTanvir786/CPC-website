@@ -1,6 +1,9 @@
 h1 {
     text-align: center;
 }
+text{
+    margin-left: 200px;
+}
 body{
     width: 700px;
 }

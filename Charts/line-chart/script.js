@@ -1,4 +1,4 @@
-var canvasElement = document.getElementById("bar-chart");
+var canvasElement = document.getElementById("line-chart");
 var chartTitle = "University Ratings";
 var labelsData = ["NSU", "IUB", "BRACU", "AIUB", "UIU"]; //Column names of a bar-chart
 var inputData = [12, 5, 18, 8, 7]; //column height of a bar-chart

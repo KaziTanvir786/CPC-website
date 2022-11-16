@@ -4,11 +4,11 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Universities', 'Ranks'],
-        ['NSU',     11],
-        ['IUB',      2],
-        ['AIUB',  2],
+        ['NSU', 11],
+        ['IUB', 2],
+        ['AIUB', 2],
         ['BRACU', 2],
-        ['UIU',    7]
+        ['UIU', 7]
     ]);
     
     var options = {
