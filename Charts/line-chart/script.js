@@ -20,7 +20,7 @@ var config = {
             label: labelTitle,
             data: inputData,
             // backgroundColor: background,
-            borderColor: 'rgb(75, 192, 192)',
+            borderColor: 'grey',
             pointBorderColor: background,
             pointBackgroundColor: background,
             pointRadius: 6,
@@ -29,6 +29,7 @@ var config = {
         }]
     },
     options: {
+        responsive: true,
         plugins: {
             title: {
                 display: true,
