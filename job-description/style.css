@@ -6,15 +6,16 @@ body {
 }
 
 #main-container{
-    background-color: rgb(219, 219, 219);
-    height: 500px;
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 15px;
     border-radius: 10px;
-    margin: 50px;
-    padding: 0%;
+    margin: 10px 120px;
 }
 .title-container{
     padding: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 120px;
     
 }
@@ -23,12 +24,13 @@ body {
     flex-direction: row;
 }
 #left-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 60%;
+    padding-right: 50px;
 }
 #right-container{
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: center;
     width: 40%;
     padding: 10px;
@@ -52,7 +54,12 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+}
+#copy-link-btn button{
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: none;
 }
 #title h1{
     font-size: 40px;
@@ -65,4 +72,10 @@ img{
 }
 th{
     width: 30%;
+}
+.job-description-icon{
+    margin-right: 10px;
+}
+.icon{
+    width: 2%;
 }
