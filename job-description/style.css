@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
+    padding: 0%;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    background-image: url('./img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.full-container{
+    padding: 0%;
+    margin: 0%;
 }
 
 #main-container{
+    min-height: 100vh;
     background-color: whitesmoke;
     padding: 10px 30px;
-    box-shadow: 1px 1px 5px grey;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
     border-radius: 15px;
     border-radius: 10px;
     margin: 10px 120px;
@@ -45,8 +56,10 @@ img{
 .title-container{
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 #title{
+    height: 100%;
     width: 80%;
 }
 #copy-link-btn{
@@ -54,7 +67,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid black; */
 }
 #copy-link-btn button{
     height: 50px;
@@ -67,15 +79,24 @@ img{
 }
 
 #title h3{
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px;
+}
+.table{
+    margin-bottom: 30px;
 }
 th{
     width: 30%;
 }
 .job-description-icon{
     margin-right: 10px;
+    font-size: 20px;
 }
 .icon{
     width: 2%;
+}
+.description-container{
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    padding: 10px;
+    border-radius: 20px;
 }
