@@ -126,3 +126,14 @@ p{
     transform: scale(1.02);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
 }
+.company_name{
+    color: white;
+}
+.admin-table-container {
+    padding: 10px;
+}
+.status-container{
+    height: 50px;
+    margin: 10px;
+    border: 1px solid grey;
+}
