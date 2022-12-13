@@ -25,12 +25,12 @@ body {
     display: flex;
     flex-direction: row;
 }
-#left-container{
+.left-container{
     /* border: 2px solid black; */
     width: 50%;
     padding-right: 50px;
 }
-#right-container{
+.right-container{
     display: flex;
     /* border: 2px solid black; */
     justify-content: center;
@@ -56,29 +56,29 @@ img{
     flex-direction: row;
     /* margin-bottom: 10px; */
 }
-#title{
+.title{
     height: 200%;
     width: 70%;
 }
-#top-btn{
-    width: 30%;
+.top-btn{
+    /* width: 30%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#top-btn button{
+.top-btn button{
     width: 140px;
     height: 50px;
     border-radius: 25px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.281);
 }
-#title h1{
+.title h1{
     color: white;
     font-size: 40px;
     margin: 10px 0px;
 }
 
-#title h2{
+.title h2{
     color: white ;
     font-size: 28px;
     margin: 0px;
@@ -145,6 +145,7 @@ p{
     margin-bottom: 20px;
 }
 .status-item{
+    text-align: center;
     /* background-color: rgba(0, 124, 207, 0.664); */
     /* color: white; */
     border-radius: 10px;
@@ -162,10 +163,84 @@ p{
     /* border: 1px solid black; */
 }
 .status-item h6{
-    /* width: 100%; */
     padding: 2px 0px;
-    /* border-bottom: 1px solid grey; */
 }
-.status-left{
-    /* border-right: 5px solid white; */
+.bold{
+    font-weight: bold;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 545px) {
+    #main-container{
+        margin: 0px 0px;
+    }
+    .title-container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .top-btn{
+        margin-top: 20px !important;
+    }
+    .status-container{
+        /* display: none; */
+        margin-top: -20px;
+        scroll-behavior: smooth;
+        overflow: scroll;
+    }
+    .detail-container{
+        flex-direction: column-reverse;
+    }
+    .left-container{
+        width: 100%;
+        padding-right: 0;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .job-description-icon{
+        font-size: medium;
+        margin: 0;
+        padding: 0;
+    }
+    .title h1{
+        color: white;
+        font-size: 35px;
+        margin: 10px 0px;
+    }
+    
+    .title h2{
+        color: white ;
+        font-size: 25px;
+        margin: 0px;
+    }
+    .title{
+        height: 200%;
+        width: 100%;
+    }
+    .company-name{
+        width: 100%;
+    }
+    .status-item{
+        padding: 5px;
+    }
+    .status-title{
+        font-size: 14px;
+    }
+    .status-value{
+        font-size: 18px;
+    }
+    .status-item{
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width:546px) and (max-width: 572px) {
+    
+}
+
+@media only screen and (min-width:572px) and (max-width: 991px) {
+    
 }
