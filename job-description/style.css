@@ -46,12 +46,15 @@ img{
 }
 .title-container{
     padding: 20px !important;
-    background-color: rgb(0, 80, 126);
+    /* background-color: rgb(0, 80, 126); */
+    background-image: url("./img/bg-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 8px 8px 0px 0px;
     padding: 5px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 #title{
     height: 200%;
@@ -75,9 +78,9 @@ img{
     margin: 10px 0px;
 }
 
-#title h3{
+#title h2{
     color: white ;
-    font-size: 22px;
+    font-size: 28px;
     margin: 0px;
 }
 .table{
@@ -126,35 +129,42 @@ p{
     transform: scale(1.02);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
 }
-.company_name{
+.company-name{
     color: white;
 }
 .admin-table-container {
     padding: 10px;
 }
 .status-container{
+    /* background-color: rgb(0, 80, 126); */
     /* height: 50px; */
-    margin: 10px;
+    /* margin: 10px; */
     /* border: 1px solid grey; */
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 20px;
 }
 .status-item{
-    color: white;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* background-color: rgba(0, 124, 207, 0.664); */
+    /* color: white; */
     border-radius: 10px;
-    border: 2px solid #004da0;
-    width: 33.33%;
+    border: 1px solid #8a8a8a3f;
+    box-shadow: 1px 1px 4px rgba(138, 138, 138, 0.644);
+    /* width: 20%; */
     margin: 5px;
-    height: 100px;
-    /* border: 1px solid black; */
-}
-.job-status{
+    /* height: 100px; */
     padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 4px solid rgb(0, 66, 153); */
+    /* border: 1px solid black; */
+}
+.status-item h6{
+    /* width: 100%; */
+    padding: 2px 0px;
+    /* border-bottom: 1px solid grey; */
 }
 .status-left{
     /* border-right: 5px solid white; */
