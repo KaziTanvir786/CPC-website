@@ -58,7 +58,3 @@ function check(){
     }
     return false;
 }
-
-function flash(){
-    document.getElementById("flashdata").style.display="block";
-}

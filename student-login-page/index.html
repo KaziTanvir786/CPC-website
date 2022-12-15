@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Student/Alumni Login</title>
 </head>
@@ -18,6 +19,14 @@
                     <div class="form-title">
                         <h1 class="text-center">Student / Alumni Login</h1>
                     </div>
+
+                    <!-- flashdata div -->
+                    <div id="flashdata" class="flashdata-container">
+                        <div class="alert alert-danger animate__animated animate__shakeX" style="color: brown; background-color: rgb(255, 213, 199);" role="alert">
+                            Some error occurred!
+                        </div> 
+                    </div>
+
                     <form class="row g-3 d-flex justify-content-center" onsubmit="check()">
                         <div class="col-auto email-input-div d-flex align-items-center">
                             <input type="email" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Email">
@@ -45,7 +54,7 @@
                             <button type="submit" class="btn btn-primary mb-3 resetpass-btn">Reset Password</button>
                         </div>
                     </div>
-                    <div class="reg-container" onmouseenter="this.classList.add('paused')">
+                    <div class="reg-container">
                         <div class="d-flex justify-content-center reg-title">
                             <h4>Have not registered yet?</h4>
                         </div>
@@ -56,6 +65,8 @@
                                 Alumni</button>
                         </div>
                     </div>
+                    
+                    <button id="flashdata-btn" onclick="flash()">click</button>
                 </div>
             </div>
 
