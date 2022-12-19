@@ -4,8 +4,25 @@ var warnIconEmail = document.getElementById("warn-icon-email");
 var checkIconEmail = document.getElementById("check-icon-email");
 var warnIconPass = document.getElementById("warn-icon-pass");
 var checkIconPass = document.getElementById("check-icon-pass");
+var textFeild = document.getElementsByClassName("text-field");
 
 var emailRegex = /^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/;
+
+
+function validateText() {
+    if (textFeild.value.length > 3) {
+        textFeild.style.boxShadow = "none";
+        warnIconEmail.style.display = "none";
+        checkIconEmail.style.display = "none";
+        return false;
+    }
+    else {
+        emailFeild.style.boxShadow = "none";
+        warnIconEmail.style.display = "none";
+        checkIconEmail.style.display = "inline";
+        return true;
+    }
+}
 
 function validateEmail() {
     if (emailFeild.value == "") {

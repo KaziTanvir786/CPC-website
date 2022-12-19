@@ -12,51 +12,58 @@
 
 <body>
     <div class="main-container">
-        <div class="row">
-            <div class="left-container col d-flex justify-content-center">
+            <div class="left-container d-flex justify-content-center">
                 <!-- <img class="login-side-img" src="./img/nsu-logo-small.png" width="122px" height="155px" alt=""
                     srcset=""> -->
             </div>
-            <div class="right-container col d-flex justify-content-center">
+            <div class="right-container d-flex justify-content-center">
                 <div class="form-container">
                     <div class="form-title">
                         <h1 class="text-center">Corporate Registration</h1>
                     </div>
                     <form class="row g-3 d-flex justify-content-center" onsubmit="check()">
-                        <div class="col-auto email-input-div d-flex align-items-center">
-                            <input type="email" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Email">
-                            <i id="email-icon" class="fas fa-user form-icon"></i>
-                            <i id="warn-icon-email" class="fas fa-exclamation"></i>
-                            <i id="check-icon-email" class="fas fa-check"></i>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="Person Name">
                         </div>
-                        <div class="col-auto email-input-div d-flex align-items-center">
-                            <input type="email" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Email">
-                            <i id="email-icon" class="fas fa-user form-icon"></i>
-                            <i id="warn-icon-email" class="fas fa-exclamation"></i>
-                            <i id="check-icon-email" class="fas fa-check"></i>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="email" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="Work Email">
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="Phone Number">
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="LinkedIn Profile Link">
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <select class="form-select input-field" aria-label="Default select example">
+                                <option selected>Are you an alumni of North South University?</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                              </select>
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="Current Position">
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field text-field" oninput="validateText()" id="input-email" placeholder="Company Name">
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <textarea placeholder="Company Address" style="height: 110px;" class="form-control input-field"></textarea>
+                        </div>
+                        <div class="col-auto input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Company Website">
                         </div>
                         <div class="col-auto input d-flex align-items-center">
-                            <input type="password" class="form-control input-field" oninput="validatePass()" id="input-pass"
-                                placeholder="Password">
-                            <i id="pass-icon" class="fas fa-lock form-icon"></i>
-                            <i id="warn-icon-pass" class="fas fa-exclamation"></i>
-                            <i id="check-icon-pass" class="fas fa-check"></i>
-                        </div>
-                        <div class="captcha d-flex justify-content-center">
-                            <div class="g-recaptcha" data-sitekey="6LeMzYciAAAAADMHS2BVd9tr7gB7fzsSROpba0zo"></div>
+                            <!-- <input type="text" class="form-control input-field" oninput="validatePass()" id="input-pass"
+                                placeholder="Remarks"> -->
+                            <textarea placeholder="Remarks" style="height: 110px;" class="form-control input-field"></textarea>
                         </div>
                         <div class="button d-flex justify-content-center">
                             <button type="submit" id="id-login-btn"
-                                class="btn btn-success mb-3 login-btn">Login</button>
+                                class="btn btn-success mb-3 login-btn">Submit</button>
                         </div>
                     </form>
-                    <div>
-                        <div class="button d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary mb-3 resetpass-btn">Reset Password</button>
-                        </div>
-                    </div>
                 </div>
-            </div>
         </div>
     </div>
 
