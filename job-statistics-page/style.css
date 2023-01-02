@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.outer-container{
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+.left-container{
+    width: 80vw;
+}
+.right-container{
+    width: 20vw;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(199, 199, 199, 0.849);
+}
+.data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(199, 199, 199, 0.849);
+}
+.table{
+    width: 30vw;
+}
+#pie-chart-1{
+    height: 300px;
+}
+#pie-chart-2{
+    height: 300px;
+}
+.table-title{
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.date-input{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(228, 228, 228);
+    margin: 10px;
+    padding: 0px 10px;
+}
+.date-title{
+    padding: 25px 10px 0px 15px;
+    font-weight: 600;
+}
+.filter-btn{
+    display: block;
+    width: 90%;
+    height: 42px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px 10px;
+    transition: 0.3s;
+}
+.search-btn{
+    background-color: rgba(0, 97, 161, 0.85);
+    color: white;
+}
+.clear-btn{
+    background-color: #ec8722;
+    color: white;
+}
+.search-btn:hover{
+    background-color: rgba(0, 75, 126, 0.85);
+    box-shadow: 2px 2px 10px rgba(90, 90, 90, 0.76);
+}
+.clear-btn:hover{
+    background-color: rgba(216, 97, 0, 0.897);
+    box-shadow: 2px 2px 10px rgba(90, 90, 90, 0.76);
+}
+
+
+/* responsive */
+@media only screen and (max-width: 557px) {
+    .outer-container{
+        flex-direction: column-reverse;
+        padding: 1%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 98vw;
+        margin: 0;
+        font-size: 14px;
+    }
+    .data-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .date-title{
+        padding-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+    .left-container{
+        width: 98vw;
+    }
+    .table{
+        width: 100vw;
+    }
+    .table-container{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .chart-container{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #pie-chart-1, #pie-chart-2{
+        width: 620px;
+    }
+    .search-btn{
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (min-width: 558px) and (max-width: 749px) {
+    .outer-container{
+        flex-direction: column-reverse;
+        padding: 1%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 98vw;
+        margin: 0;
+        font-size: 14px;
+    }
+    .date-title{
+        padding-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        margin-right: -10px;
+    }
+    .left-container{
+        width: 98vw;
+    }
+    .table{
+        width: 45vw;
+    }
+    .table-container{
+        margin-left: 100px;
+    }
+    .chart-container{
+        margin-left: -80px;
+    }
+    #pie-chart-1, #pie-chart-2{
+        width: 460px;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 1009px) {
+    .table-title{
+        font-size: 22px;
+    }
+    .outer-container{
+        width: 100vw;
+        padding-left: 1vw;
+        padding-right: 0.5vw;
+    }
+    .table-container{
+        margin-left: 140px;
+    }
+    .chart-container{
+        margin-left: -80px;
+    }
+    .left-container{
+        width: 72vw;
+    }
+    .right-container{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 1010px) and (max-width: 1067px) {
+    .outer-container{
+        padding-left: 1vw;
+        padding-right: 0.5vw;
+    }
+    .table-container{
+        margin-left: 160px;
+    }
+    .chart-container{
+        margin-left: -40px;
+    }
+    .left-container{
+        width: 75vw;
+    }
+    .right-container{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 1068px) and (max-width: 1140px) {
+    .outer-container{
+        padding-left: 1vw;
+        padding-right: 0.7vw;
+    }
+    .table-container{
+        margin-left: 140px;
+    }
+    .left-container{
+        width: 75vw;
+    }
+    .right-container{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 1141px) and (max-width: 1197px) {
+    .outer-container{
+        padding-left: 1.5vw;
+        padding-right: 1vw;
+    }
+    .table-container{
+        margin-left: 120px;
+    }
+    .left-container{
+        width: 75vw;
+    }
+    .right-container{
+        width: 25vw;
+    }
+}
+@media only screen and (min-width: 1198px) and (max-width: 1270px) {
+    .outer-container{
+        padding-left: 2vw;
+        padding-right: 1.5vw;
+    }
+    .table-container{
+        margin-left: 100px;
+    }
+    .left-container{
+        width: 75vw;
+    }
+    .right-container{
+        width: 25vw;
+    }
+}
