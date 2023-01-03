@@ -158,30 +158,9 @@ p{
 .bold{
     font-weight: bold;
 }
-.mod-btn-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.bottom-text{
+    font-size: 36px;
 }
-.mod-button{
-    margin: 20px;
-    height: 40px;
-    width: 200px;
-    border: 2px solid;
-    border-radius: 10px;
-    font-weight: 600;
-}
-.edit-btn{
-    /* background-color: rgb(214, 185, 20); */
-}
-.delete-btn{
-    /* background-color: rgb(153, 0, 46); */
-}
-.close-btn{
-    
-}
-
 
 /* responsive */
 
