@@ -67,8 +67,8 @@ hr {
     padding-bottom: 50px; 
     overflow: scroll;
     scroll-behavior: smooth;
-    width: 1400px;
-    margin-left: 40%;
+    width: 1200px;
+    margin-left: 30%;
 }
 
 .left-container {
@@ -111,7 +111,8 @@ input::-webkit-outer-spin-button,
 }
 
 .input-field:focus {
-    box-shadow: 2px 2px 20px rgb(255, 255, 255);
+    box-shadow: 2px 2px 20px rgb(82, 171, 253);
+    transform: scale(1.005);
 }
 
 #email-field {
@@ -157,6 +158,7 @@ input::-webkit-outer-spin-button,
 
 .form-title h1 {
     margin-bottom: 10px;
+    font-size: 32px;
 }
 
 .resetpass-btn {
@@ -219,58 +221,69 @@ input::-webkit-outer-spin-button,
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 545px) {
-    .form-container {
-        margin-left: 2px
-    }
-
-    .right-container {
-        margin-top: -830px;
-        border-radius: 0px 0px 0px 0px;
-    }
-
-}
-
-@media only screen and (min-width:546px) and (max-width: 572px) {
-    .form-container {
-        margin-left: 30px;
-    }
-
-    .left-container{
-        position: absolute;
-        display: none;
-    }
-
-    .reg-container {
-        margin-left: 50px;
-        width: 80%;
-    }
-}
-
-@media only screen and (min-width:881px) and (max-width: 1070px) {
+@media only screen and (max-width: 324px) {
     .right-container{
-        width: 90%;
-        /* margin-left: 200px; */
+        width: 100vw !important;
+        margin-left: 0px !important;
+        border-radius: 0;
+    }
+    form{
+        margin-left: -50% !important;
+    }
+    .form-title h1 {
+        margin-left: -50% !important;
+    }
+    .form-select{
+        width: 110%;
+    }
+
+}
+@media only screen and (min-width:324px) and (max-width: 799px) {
+    .right-container{
+        width: 100vw !important;
+        margin-left: 0px !important;
+        border-radius: 0;
+    }
+    form{
+        margin-left: -50% !important;
+    }
+    .form-title h1 {
+        margin-left: -50% !important;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (max-width: 909px) {
+    .right-container{
+        width: 1200px;
+        margin-left: 180px !important;
     }
     
-    /* .form-container {
-        margin-left: 25%;   
-    } */
+    .form-title h1 {
+        font-size: 28px;
+    }
+
+    .form-select{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:910px) and (max-width: 1070px) {
+    .right-container{
+        width: 1000px;
+        margin-left: 220px !important;
+    }
 
     .form-select{
         width: 100%;
     }
 
 }
-@media only screen and (min-width:572px) and (max-width: 1071px) {
+@media only screen and (min-width:572px) and (max-width: 1072px) {
     .right-container{
         width: 80%;
         margin-left: 400px;
     }
-    
-    /* .form-container {
-        margin-left: 25%;   
-    } */
 
     .form-select{
         width: 100%;
@@ -278,17 +291,7 @@ input::-webkit-outer-spin-button,
 
 }
 @media only screen and (min-width:1072px) and (max-width: 1116px) {
-    /* .right-container{
-        width: 80%;
-        margin-left: 400px;
-    } */
-    
-    /* .form-container {
-        margin-left: 25%;   
-    } */
-
     .form-select{
-        width: 105%;
+        width: 110%;
     }
-
 }
