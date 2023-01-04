@@ -41,7 +41,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    transition: 0.3s;
 }
 
 .main-container {
@@ -123,21 +122,9 @@ body {
     color: rgb(2, 184, 2);
 }
 
-.flashdata-container{
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: -10px;
-    border: 0 !important;
-    display: none;
-    font-size: 110%;
-}
-
-.flashdata-container div{
-    border: none;
-}
-
 .reg-container {
     background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
     padding-bottom: 15px;
     border-radius: 20px;
     animation: move 1.5s ease infinite;
