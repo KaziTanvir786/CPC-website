@@ -53,24 +53,26 @@ body {
 }
 
 .left-container {
-    height: 125vh;
+    height: 130vh;
     width: 1000px;
     margin-top: -100px;
     border-radius: 0px 50% 50% 0px;
     background-image: linear-gradient(to right, rgba(0, 0, 44, 0.85), rgba(0, 97, 161, 0.85));
     box-shadow: 1px 5px 20px black;
+    margin-right: 600px;
 }
 
 .right-container {
     height: 750px;
+    display: none !important;
 }
 
 .form-container {
     border-radius: 20px;
     height: 50%;
     margin-top: 120px;
-    width: 500px;
-    margin-left: -100px;
+    width: 70%;
+    margin-left: -180px;
 }
 
 .form-control:focus {
@@ -81,7 +83,7 @@ body {
     text-indent: 25px;
     border-radius: 20px;
     height: 40px;
-    width: 350px;
+    width: 100vw;
     border: none;
     transition: 0.3s;
 }
