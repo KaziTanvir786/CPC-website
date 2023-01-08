@@ -20,18 +20,51 @@
                     </div>
                     <form class="row g-3 d-flex justify-content-center" onsubmit="check()">
                         <div class="col-auto email-input-div d-flex align-items-center">
-                            <input type="email" class="form-control input-field" oninput="validateEmail()" id="input-email" placeholder="Email">
-                            <i id="email-icon" class="fas fa-user form-icon"></i>
-                            <i id="warn-icon-email" class="fas fa-exclamation"></i>
-                            <i id="check-icon-email" class="fas fa-check"></i>
+                            <input type="text" class="form-control input-field" id="input-name" placeholder="Full Name">
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <select oninput="validateStudentStatus()" id="input-student-status" class="form-select input-field" aria-label="Default select example">
+                                <option selected>Student Status</option>
+                                <option value="Current Student">Current Student</option>
+                                <option value="Alumni">Alumni</option>
+                              </select>
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="number" class="form-control input-field" id="input-id" placeholder="NSU ID">
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="email" class="form-control input-field" oninput="" id="input-nsu-email" placeholder="NSU Email">
+                            <span style="color: white; margin-left: 10px; margin-right: 10px;">@northsouth.edu</span>
                         </div>
                         <div class="col-auto input d-flex align-items-center">
                             <input type="password" class="form-control input-field" oninput="validatePass()" id="input-pass"
                                 placeholder="Password">
-                            <i id="pass-icon" class="fas fa-lock form-icon"></i>
-                            <i id="warn-icon-pass" class="fas fa-exclamation"></i>
-                            <i id="check-icon-pass" class="fas fa-check"></i>
                         </div>
+                        <div class="col-auto input d-flex align-items-center">
+                            <input type="password" class="form-control input-field" oninput="validateConfirmPass()" id="input-confirm-pass"
+                                placeholder="Confirm Password">
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <select id="input-alumni" oninput="validateAlumni()" class="form-select input-field" aria-label="Default select example">
+                                <option selected>School</option>
+                                <option value="Current Student">Current Student</option>
+                                <option value="Alumni">Alumni</option>
+                              </select>
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <select id="input-alumni" oninput="validateAlumni()" class="form-select input-field" aria-label="Default select example">
+                                <option selected>Department</option>
+                                <option value="Current Student">Current Student</option>
+                                <option value="Alumni">Alumni</option>
+                              </select>
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="number" class="form-control input-field" oninput="validateEmail()" id="input-phone" placeholder="Phone Number">
+                        </div>
+                        <div class="col-auto email-input-div d-flex align-items-center">
+                            <input type="text" class="form-control input-field" oninput="validateEmail()" id="input-linkedin" placeholder="LinkedIn Profile">
+                        </div>
+                        
                         <div class="button d-flex justify-content-center">
                             <button type="submit" id="id-login-btn"
                                 class="btn btn-success mb-3 login-btn">Submit</button>

@@ -80,18 +80,23 @@ body {
 }
 
 .input-field {
-    text-indent: 25px;
+    text-indent: 10px;
     border-radius: 20px;
     height: 40px;
     width: 100vw;
     border: none;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
-.input-field:focus {
-    transform: scale(1.05);
-    margin: 0px 7px;
+.input-field::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
 }
+
+/* .input-field:focus {
+    transform: scale(1.03);
+    margin: 0px 7px;
+} */
 
 #email-field {
     border: none;
