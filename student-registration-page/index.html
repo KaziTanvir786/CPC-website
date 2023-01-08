@@ -30,7 +30,7 @@
                               </select>
                         </div>
                         <div class="col-auto email-input-div d-flex align-items-center">
-                            <input type="number" class="form-control input-field" id="input-id" placeholder="NSU ID">
+                            <input type="number" oninput="validateID()" class="form-control input-field" id="input-id" placeholder="NSU ID">
                         </div>
                         <div class="col-auto email-input-div d-flex align-items-center">
                             <input type="email" class="form-control input-field" oninput="" id="input-nsu-email" placeholder="NSU Email">
@@ -45,17 +45,32 @@
                                 placeholder="Confirm Password">
                         </div>
                         <div class="col-auto email-input-div d-flex align-items-center">
-                            <select id="input-alumni" oninput="validateAlumni()" class="form-select input-field" aria-label="Default select example">
+                            <select id="input-school" oninput="validateSchool()" class="form-select input-field" aria-label="Default select example">
                                 <option selected>School</option>
-                                <option value="Current Student">Current Student</option>
-                                <option value="Alumni">Alumni</option>
+                                <option value="Current Student">School of Business & Economics(SBE)</option>
+                                <option value="Alumni">School of Engineering & Physical Sciences(SEPS)</option>
+                                <option value="Alumni">School of Humanities & Social Sciences(SHSS)</option>
+                                <option value="Alumni">School of Health & Life Sciences(SHLS)</option>
                               </select>
                         </div>
                         <div class="col-auto email-input-div d-flex align-items-center">
-                            <select id="input-alumni" oninput="validateAlumni()" class="form-select input-field" aria-label="Default select example">
+                            <select id="input-department" oninput="validateDepartment()" class="form-select input-field" aria-label="Default select example">
                                 <option selected>Department</option>
-                                <option value="Current Student">Current Student</option>
-                                <option value="Alumni">Alumni</option>
+                                <option value="Current Student">Department of Electrical & Computer Engineering (ECE)</option>
+                                <option value="Alumni">Department of Architecture</option>
+                                <option value="Alumni">Department of Civil & Environmental Engineering</option>
+                                <option value="Alumni">Department of Mathematics & Physics</option>
+                                <option value="Alumni">Department of Biochemistry & Microbiology</option>
+                                <option value="Alumni">Department of Environmental Science & Management</option>
+                                <option value="Alumni">Department of Pharmaceutical Sciences</option>
+                                <option value="Alumni">Department of Public Health</option>
+                                <option value="Alumni">Department of Law</option>
+                                <option value="Alumni">Department of History & Philosophy</option>
+                                <option value="Alumni">Department of Political Science & Sociology</option>
+                                <option value="Alumni">Department of Accounting & Finance</option>
+                                <option value="Alumni">Department of Management</option>
+                                <option value="Alumni">Department of Marketing & Int'l Business</option>
+                                <option value="Alumni">Department of Economics</option>
                               </select>
                         </div>
                         <div class="col-auto email-input-div d-flex align-items-center">
