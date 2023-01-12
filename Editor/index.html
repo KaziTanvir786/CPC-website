@@ -1,30 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/classic/ckeditor.js"></script>
-    </head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Classic editor with custom styles</title>
+  <script src="https://cdn.ckeditor.com/4.20.1/standard-all/ckeditor.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div id="editor">Write your text here...</div>
-    </div>
+  <textarea cols="80" id="editor" name="editor" rows="10">
+    Write your text here...
+  </textarea>
 
-    <style>
-        .container{
-            width: 500px;
-        }
-    </style>
-
-    <script>
-        ClassicEditor.create(document.querySelector('#editor')).then( editor => {
-                        console.log( editor );
-                    }).catch( error => {
-                        console.error( error );
-                    });
-    </script>
+  <script>
+    CKEDITOR.replace('editor', {
+      height: 260,
+      
+      contentsCss: [
+        'http://cdn.ckeditor.com/4.20.1/full-all/contents.css',
+        'https://ckeditor.com/docs/ckeditor4/4.20.1/examples/assets/css/classic.css'
+      ],
+      removeButtons: 'PasteFromWord'
+    });
+  </script>
 </body>
+
 </html>
